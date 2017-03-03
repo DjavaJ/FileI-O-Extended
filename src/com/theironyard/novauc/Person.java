@@ -5,16 +5,17 @@ package com.theironyard.novauc;
  */
 
 
+
 public class Person {
 
-    int id;
+    String id;
     String first_name;
     String last_name;
     String email;
     String country;
-    int ip_address;
+    String ip_address;
 
-    public Person(int id, String first_name, String last_name, String email, String country, int ip_address) {
+    public Person(String id, String first_name, String last_name, String email, String country, String ip_address) {
 
         this.id = id;
         this.first_name = first_name;
@@ -25,11 +26,16 @@ public class Person {
     }
 
 
-    public int getId() {
+    //public fileParse (variables){
+    //return last name, country
+    //}
+
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -65,15 +71,20 @@ public class Person {
         this.country = country;
     }
 
-    public int getIp_address() {
+    public String getIp_address() {
         return ip_address;
     }
 
-    public void setIp_address(int ip_address) {
+    public void setIp_address(String ip_address) {
         this.ip_address = ip_address;
     }
+        @Override
+    public String toString() {
+            return "Name: " + this.last_name + " from " +this.country +"";
+    }
 
-    public int put(id) {
+
+    public void add(Person person) {
     }
 }
 
